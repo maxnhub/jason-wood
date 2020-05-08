@@ -1,0 +1,8 @@
+{
+  "text-color": "#000000",
+  "second-color": "#e2e2e2",
+  "bp-desktop-hd": "1800px",
+  "bp-desktop": "1550px",
+  "bp-tablets": "768px",
+  "bp-phones": "630px"
+}

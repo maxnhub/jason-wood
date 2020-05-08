@@ -1,0 +1,46 @@
+include ./mixins.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(http-equiv="Cache-Control" content="max-age=31536000, must-revalidate")
+    meta(name="description" content="Тестовое задание для Mygento")
+    link(href="https://img.icons8.com/pastel-glyph/64/000000/hearts.png" rel="shortcut icon" type="image/x-icon")
+    title Test page mygento | main page
+  body
+    .wrapper
+      .maincontent
+        section.intro
+          .container
+            header.header 
+              nav.menu
+                a.menu__item(href="#") Home
+                a.menu__item(href="#") About me
+                a.menu__item(href="#") Portfolio
+                a.menu__item(href="#") Contacts
+              a.menu-full(href="#") ∞ MENU
+            .scroll
+              span.scroll__text Scroll down to see more
+              +icon('arrows', 'scroll__icon')
+        section.about
+          .container
+            nav.menu.menu--gray
+              a.menu__item(href="#") Home
+              a.menu__item(href="#") About me
+              a.menu__item(href="#") Portfolio
+              a.menu__item(href="#") Contacts
+            .about__desc
+              .about__desc_visual
+                //- +image('content/about.png', 'about__desc_pic', 'Фото Джейсона')
+              .about__desc_readable
+                h1.about__desc_title About me
+                p.about__desc_text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                p.about__desc_text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                span.about__desc_author Jason Wood 
+            .scroll.scroll--gray
+              span.scroll__text Keep scrolling, there is still more to come
+              +icon('arrows', 'scroll__icon')
+          

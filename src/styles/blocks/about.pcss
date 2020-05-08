@@ -1,0 +1,68 @@
+.about__desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  color: $text-color;
+  padding: 75px 0;
+  @include desktop {
+    grid-template-columns: 1fr;
+    grid-template-rows: 770px auto;
+  }
+  @include tablets {
+    padding: 0 0 75px;
+  }
+  &_readable {
+    display: flex;
+    flex-direction: column;
+    padding: 90px 0;
+    @include desktop {
+      padding: 0 60px;
+    }
+    @include phones {
+      padding: 0 35px;
+      & p:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+  &_title {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    @include phones {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  &_text {
+    font-size: 24px;
+    margin-bottom: 60px;
+    @include phones {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 30px;
+    } 
+  }
+  &_author {
+    font-size: 36px;
+    @include phones {
+      font-size: 18px;
+    }
+  }
+  &_visual {
+    background: url('../images/content/about.png') 0 0/ cover no-repeat;
+    @include desktop {
+      display: flex;
+      justify-content: center;
+    }
+    @include phones {
+      background-position: -225px 0;
+    }
+  }
+  &_pic {
+    @include desktop {
+      width: 770px;
+      min-height: 700px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.intro {
+  height: 100vh;
+  width: 100vw;
+  background: url('../images/content/bg.png') 0 0/ cover no-repeat;
+  & .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  @include tablets {
+    height: 911px;
+  }
+  @include phones {
+    height: 271px;
+  }
+}
